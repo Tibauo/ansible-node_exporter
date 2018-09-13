@@ -1,0 +1,9 @@
+[Unit]
+Description=Node Exporter
+
+[Service]
+Type=simple
+ExecStart={{ exec_node_exporter }}
+
+[Install]
+WantedBy=multi-user.target

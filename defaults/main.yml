@@ -1,0 +1,12 @@
+---
+# defaults file for node-exporter
+prometheus_user: node_exporter
+create_home: no
+version_node_exporter: 0.16.0
+path_node_exporter: /usr/sbin/node_exporter
+exec_node_exporter: "{{ path_node_exporter }}/node_exporter-{{ version_node_exporter }}.linux-amd64/node_exporter"
+
+
+#version node : https://github.com/prometheus/node_exporter/releases/
+download_node_exporter: https://github.com/prometheus/node_exporter/releases/download/v{{ version_node_exporter }}/node_exporter-{{ version_node_exporter }}.linux-amd64.tar.gz
+
